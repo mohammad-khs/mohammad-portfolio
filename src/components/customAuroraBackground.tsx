@@ -4,14 +4,13 @@ import { motion } from "framer-motion";
 
 import { AuroraBackground } from "./ui/aurora-background";
 import { FlipWords } from "./ui/flip-word";
-import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Button } from "./ui/button";
 
-interface auroraBackgroundDemoProps extends React.HTMLProps<HTMLDivElement> {}
-
-export function AuroraBackgroundDemo({}: auroraBackgroundDemoProps) {
+// interface auroraBackgroundDemoProps extends React.HTMLProps<HTMLDivElement> {}
+// {}: auroraBackgroundDemoProps
+export function AuroraBackgroundDemo() {
   const words = ["better", "responsive", "beautiful", "modern"];
   const [isFading, setIsFading] = useState(false);
   const router = useRouter();
@@ -44,7 +43,7 @@ export function AuroraBackgroundDemo({}: auroraBackgroundDemoProps) {
             Hi, my name is{" "}
             <span className="text-cyan-300">Mohammad Khosrvani</span>
             <div className="md:text-4xl pt-5 text-lg sm:text-3xl">
-              I'm an{" "}
+              I&apos;m an{" "}
               <span className="text-white">
                 independent creative{" "}
                 <span className="text-cyan-300">Frontend </span>developer

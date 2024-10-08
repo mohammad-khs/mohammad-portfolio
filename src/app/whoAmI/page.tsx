@@ -1,9 +1,9 @@
 import { LampDemo } from "@/components/ui/lamp";
 import { FC } from "react";
 
-interface PageProps {}
+// interface PageProps {}
 
-const Page: FC<PageProps> = () => {
+const Page: FC = () => {
   return (
     <>
       <LampDemo />

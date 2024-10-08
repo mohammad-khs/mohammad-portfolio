@@ -10,15 +10,12 @@ import {
 } from "react-icons/bi";
 
 import PythonLogo from "./icons/pythonLogo";
-interface FadeInSectionProps {}
+// interface FadeInSectionProps {}
 
-const FadeInSection: FC<FadeInSectionProps> = () => {
+const FadeInSection: FC = () => {
   return (
     <>
-      <section
-        className="text-white h-[100vh] flex justify-center items-center bg-slate-950"
-        
-      >
+      <section className="text-white h-[100vh] flex justify-center items-center bg-slate-950">
         <motion.div
           className="absolute"
           initial={{ opacity: 0.0, y: 140 }}
