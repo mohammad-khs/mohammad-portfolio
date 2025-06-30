@@ -166,7 +166,7 @@ export function AuroraBackgroundDemo() {
                 {testimonials.map((testimonial, index) => (
                   <div key={index} className="bg-white/5 rounded-xl p-6">
                     <p className="text-neutral-300 italic mb-2">
-                      "{testimonial.quote}"
+                      &quot;{testimonial.quote}&quot;
                     </p>
                     <p className="text-cyan-300">{testimonial.author}</p>
                   </div>
@@ -182,10 +182,10 @@ export function AuroraBackgroundDemo() {
               className="w-full max-w-4xl text-center"
             >
               <h2 className="text-2xl md:text-3xl font-semibold text-cyan-300 mb-4">
-                Let's Work Together
+                Let&quot;s Work Together
               </h2>
               <p className="text-neutral-400 mb-6">
-                Have a project in mind? I'd love to hear about it.
+                Have a project in mind? I&quot;d love to hear about it.
               </p>
               <button
                 onClick={handleFade}
