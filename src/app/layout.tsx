@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Button } from "@/components/ui/button";
+import FloatingDockWrapper from "@/components/floatingDockWrapper";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,10 +29,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-950`}
       >
-        <nav className=" z-10 absolute w-screen my-4 gap-8 text-white flex md:justify-end justify-center md:pr-12 lg:pr-24 items-center">
-          <Button variant={"cyanOutLine"}>who am i</Button>
-          <Button variant={"cyanOutLine"}>Button</Button>
-          <Button variant={"cyanOutLine"}>Button</Button>
+        <nav className="m-4 md:mt-16 fixed md:left-0 bottom-0 right-0 z-10 md:flex justify-center">
+          <div className="inline-flex">
+            <FloatingDockWrapper />
+          </div>
         </nav>
         {children}
       </body>
