@@ -6,8 +6,8 @@ export default function FloatingDockWrapper() {
   return (
     <FloatingDock
       items={[
-        { title: "home", href: "/", icon: <BiHome className="text-white md:w-8 md:h-8" /> },
-        { title: "about me", href: "myContact", icon: <BiQuestionMark className="text-white md:w-8 md:h-8" /> },
+        { title: "my contact", href: "myContact", icon: <BiQuestionMark className="text-white md:w-8 md:h-8" /> },
+        { title: "about me", href: "/", icon: <BiHome className="text-white md:w-8 md:h-8" /> },
       ]}
     />
   );
