@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+// Single import for flattenColorPalette
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -16,7 +17,6 @@ const config: Config = {
       animation: {
         aurora: "aurora 60s linear infinite",
       },
-
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -59,7 +59,6 @@ const config: Config = {
           "5": "hsl(var(--chart-5))",
         },
       },
-
       keyframes: {
         aurora: {
           from: {
@@ -80,10 +79,10 @@ const config: Config = {
   plugins: [addVariablesForColors, require("tailwindcss-animate")],
 };
 
-// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+// Plugin function using the imported flattenColorPalette
 function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
 
@@ -91,4 +90,5 @@ function addVariablesForColors({ addBase, theme }: any) {
     ":root": newVars,
   });
 }
+
 export default config;
