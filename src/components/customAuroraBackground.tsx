@@ -24,14 +24,14 @@ export function AuroraBackgroundDemo() {
     {
       title: "E-commerce Platform For Trees",
       description: "Full-featured online store with Next.js",
-      tags: ["React", "Next.js", "Tailwind"],
+      tags: ["React", "Next.js", "Tailwind", "Typescript"],
       href: "https://derakhtman.ir",
     },
     {
-      title: "Portfolio Website",
-      description: "Interactive portfolio with animations",
-      tags: ["Next.js", "Framer Motion", "Tailwind"],
-      href: "/",
+      title: "algorithm visualizer",
+      description: "Interactive algorithm visualizer with animations",
+      tags: ["Next.js", "Typescript", "Tailwind"],
+      href: "https://algorithm-visualizer-beta-three.vercel.app/",
     },
     {
       title: "A Gallary Like Unsplash",
@@ -41,9 +41,10 @@ export function AuroraBackgroundDemo() {
     },
     {
       title: "Memo-Massanger",
-      description: "A real time messanger with the help of google and github OAuth key",
-      tags: ["react.js", "React Query", "Tailwind"],
-      href: "https://github.com/mohammad-khs/RPIP",
+      description:
+        "A real time messanger with the help of google and github OAuth key",
+      tags: ["react.js", "React Query", "Tailwind", "Typescript"],
+      href: "https://memo-messanger.vercel.app/login",
     },
   ];
 
@@ -90,7 +91,7 @@ export function AuroraBackgroundDemo() {
     {
       title: "State & Data Management",
       icon: "🔄",
-      skills: ["RESTful APIs", "React Query", "React Context"],
+      skills: ["RESTful APIs", "React Query", "React Context", "zustand"],
     },
     {
       title: "Tools & Platforms",
@@ -391,8 +392,8 @@ export function AuroraBackgroundDemo() {
                   whileInView={{ opacity: 1 }}
                   transition={{ delay: 0.2, duration: 0.5 }}
                 >
-                  Have a project in mind? I&apos;d love to hear about it. Let&apos;s
-                  collaborate to bring your vision to life.
+                  Have a project in mind? I&apos;d love to hear about it.
+                  Let&apos;s collaborate to bring your vision to life.
                 </motion.p>
                 <motion.div
                   initial={{ opacity: 0 }}
